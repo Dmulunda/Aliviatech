@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0B2D4A;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #0A3B66, #0B2D4A);
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+   
+}
+
+header img {
+    height: 70px;
+}
+
+nav a {
+    color: #E8F3FF;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 25px;
+    
+}
+
+nav a:hover {
+    color: #40DFFF;
+}
+
+.lang-switch {
+    margin-left: 25px;
+    padding: 8px 12px;
+    background: #08395C;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    background: url("img/hero.jpg") center/cover no-repeat;
+    padding: 180px 40px;
+    text-align: center;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+.btn {
+    padding: 14px 26px;
+    background: #1BC4E5;
+    margin: 10px;
+    border-radius: 8px;
+    color: #00314E;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #4DE2FF;
+}
+
+/* SECTION */
+.section {
+    padding: 70px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+/* SERVICES GRID */
+.service-block {
+    background: #0D3558;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.service-block img {
+    width: 45%;
+    border-radius: 12px;
+}
+
+.service-block .text {
+    width: 55%;
+    font-size: 18px;
+}
+
+/* CONTACT */
+.contact-center {
+    text-align: center;
+}
+
+.contact-center img {
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.qr {
+    width: 250px;
+    height: 250px;
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .service-block {
+        flex-direction: column;
+    }
+    .service-block img, .service-block {
+        width: 100%;
+    }
+    .Text{
+        width: 100%;
+        color: red;
+        
+
+
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+-------------------------------------
+mine css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container
+{
+
+    background-color:#212329;
+    padding: 4rem 0 4rem 0;
+    position: relative;
+    top: 25rem;
+
+ 
+}
+
+/* Add padding to the bottom of the main content or body to prevent it from being hidden behind the fixed footer */
+body {
+  padding-bottom: 50px;
+    
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color: #212329;
+    color: #E8F3FF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     margin: 0 auto ;
+}
+
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem ;
+
+}
+.footer-heading  h2 {
+    margin-bottom: 2rem;
+}
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+}
+.footer-container a:hover{
+    color:red;
+    transition:0.3s ease-out;
+}
+
+.footer-email-form  h2{
+margin-bottom: 2rem;
+}
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline-offset: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+# footer-email::placeholder{
+    color: #b1b1b1;
+}#footer-email-btn{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #F9423D;
+    outline: none;
+    border: none;
+    color: #E8F3FF;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: skyblue;
+    transition: all 0.4s ease-out;
+}
+
+
+new    
+
+body {
+  margin: 0;
+  background: lightgray;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+}
+.container {
+  position: relative;
+  top: 20px;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("logo.png");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("Home.png");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("Pricing.png");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("PME.png");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("PME1.png");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("Home-IT.png");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("info:EN.png");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("qr.png");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("info.png");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+.section contact-center{
+    background-color: grey;
+}
