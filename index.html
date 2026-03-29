@@ -96,3 +96,19 @@
             </div>
         </div>
     </footer>
+      <script>
+        function showSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
