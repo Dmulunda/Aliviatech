@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Contact - Aliviatech</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aliviatech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <img src="logo.png">
-    <nav>
-        <a href="contact.html">FR</a>
-        <a href="intro.html">Home</a>
-        <a href="About.html">About us</a>
-        <a href="residential.html">Residential</a>
-        <a href="business.html">Business</a>
-        <a href="Tarif.html">Pricing</a>
-        <a href="cont.html">Contact</a>
-    </nav>
-</header>
-
-<div class="section contact-center">
-    <h2>Contact Us</h2>
-
-    <p>Phone: 613-700-5827</p>
-    <p ><a target="_blank" href=" mailto:info@aliviatech.ca"> By email: info@aliviatech.ca</a>  </p>
-    <p>  Clic here to create <a target="_blank" href=" https://forms.office.com/r/zPe4X3HGW0"> a ticket</a> or scan me </p>
-
-
-    <img src="qr.png" alt="QR Code">
-</div>
-
-   <div class="footer-container">
-    <div class="footer">
-        <div class="footer-heading footer-1">
-              <h2>About US </h2> 
-              <a href="intro.html">Home</a>
-              <a href="About.html">About us</a>
-              <a href="residential.html">Residential</a>
-              <a href="business.html">Business</a>
-              <a href="Tarif.html">Pricing</a>
+    <header>
+        <a href="intro.html">
+            <img src="logo.png" alt="Aliviatech Logo">
+        </a>
         
-             
-        </div>
-        <div class="footer-heading footer-2">
-              <h2>Contact-Us </h2> 
-              <p> 613-700-5827</p>
-              <p ><a target="_blank" href=" mailto:info@aliviatech.ca"> Courriel: info@aliviatech.ca</a>  </p>
-              
-              
-        </div>
-        <div class="footer-heading footer-3">
-              <h2>Social media </h2> 
-               <a target="_blank" href=" https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
-              <a target="_blank" href=" https://www.instagram.com/aliviatech__/">Instagram </a>
-            
-        </div>
-        <div class="footer-email-form">
-            <h2> Learn more about us </h2>
-            <input type="email" placeholder="enter your email address  " id="footer-email">
-            <input type="submit" value="sign up " id="footer-email-btn">
-        </div>
+        <nav>
+            <ul class="nav-main">
+                <li class="hideOnMobile"><a href="intro.html">Home</a></li>
+                <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="residential.html">Residential</a></li>
+                <li class="hideOnMobile"><a href="business.html">Business</a></li>
+                <li class="hideOnMobile"><a href="Tarif.html">Pricing</a></li>
+                <li class="hideOnMobile"><a href="cont.html">Contact</a></li>
+                <li class="hideOnMobile"><span class="lang-switch"><a href="contact.html">FR</a></span></li>
+                
+                <li class="menu-button" onclick="showSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#E8F3FF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sidebar">
+                <li class="sidebar-close" onclick="hideSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8F3FF">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="intro.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="residential.html">Residential</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="Tarif.html">Pricing</a></li>
+                <li><a href="cont.html">Contact</a></li>
+                <li><span class="lang-switch"><a href="contact.html">FR</a></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section contact-center">
+        <h2>Contact Us</h2>
+
+        <p>Phone: 613-700-5827</p>
+        <p><a target="_blank" href="mailto:info@aliviatech.ca">By email: info@aliviatech.ca</a></p>
+        <p>Click here to create <a target="_blank" href="https://forms.office.com/r/zPe4X3HGW0">a ticket</a> or scan me</p>
+
+        <img src="qr.png" alt="QR Code" class="qr">
     </div>
 
-</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>About Us</h2>
+                    <a href="intro.html">Home</a>
+                    <a href="About.html">About Us</a>
+                    <a href="residential.html">Residential</a>
+                    <a href="business.html">Business</a>
+                    <a href="Tarif.html">Pricing</a>
+                </div>
+                
+                <div class="footer-heading footer-2">
+                    <h2>Contact Us</h2>
+                    <p>613-700-5827</p>
+                    <p><a target="_blank" href="mailto:info@aliviatech.ca">Email: info@aliviatech.ca</a></p>
+                </div>
+                
+                <div class="footer-heading footer-3">
+                    <h2>Follow Us</h2>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/aliviatech__/">Instagram</a>
+                </div>
+                
+                <div class="footer-email-form">
+                    <h2>Learn More About Us</h2>
+                    <form>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input type="submit" value="Sign Up" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
