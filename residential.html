@@ -1,93 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Residential Services - Aliviatech</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services PME - Aliviatech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <img src="logo.jpg">
-    <nav>
-        <a href="particuliers.html">FR</a>
-        <a href="intro.html">Home</a>
-        <a href="About.html">About us</a>
-        <a href="residential.html">Residential</a>
-        <a href="business.html">Business</a>
-        <a href="Tarif.html">Pricing</a>
-        <a href="cont.html">Contact</a>
-    </nav>
-</header>
-
-<div class="section">
-    <h2>Residential Services</h2>
-
-    <div class="service-block">
-        <img src="Home.png">
-
-        <div class="text">
-            <ul style="margin-left: auto;">
-                <li>Windows & Mac troubleshooting</li>
-                <li>Performance optimization</li>
-                <li>Virus & malware removal</li>
-                <li>Software installation & configuration</li>
-                <li>Remote or on-site assistance</li>
-                <li>Setup & Configuration: Installation of computers, tablets, and smartphones. </li>
-                <li>System Cleanup: Virus and malware removal, plus system optimization for better performance. </li>
-                <li>Operating System Services: Full reinstallation of Windows or macOS. </li>
-                <li>Data Recovery: Retrieving lost files from hard drives, USB drives, or mobile phones. </li>
-                <li>Connectivity: Internet box and Wi‑Fi setup, including home network range improvement. </li>
-                <li>Peripherals: Installation of printers, scanners, and other external devices. </li>
-                <li>Data Protection: Backup and security solutions (Cloud storage or external drives). </li>
-                <li>Account Management: Assistance with online accounts (Microsoft, Apple, Google). </li>
-                <li>User Training: Help with daily digital tasks (Office software, emails, web browsing, etc.). </li>
-                <li>Software & Updates: Installation of applications and system-wide updates. </li>
-                <li>Buying Advice: Expert recommendations for purchasing computers, phones, or accessories. </li>
-                <li>Family Security: Setting up parental controls, web filters, and password management. </li>
-                <li>Smart Home: Configuration of security cameras, smart objects, and home automation. </li>
-                <li>Support Options: On-site (at home) or remote troubleshooting. </li>
-                <li>Hardware Maintenance: Physical cleaning (dust removal, thermal paste replacement, cooling systems). </li>
-
-            </ul>
-        </div>
-    </div>
-</div>
-
-      <div class="footer-container">
-    <div class="footer">
-        <div class="footer-heading footer-1">
-              <h2>About US </h2> 
-              <a href="intro.html">Home</a>
-              <a href="About.html">About us</a>
-              <a href="residential.html">Residential</a>
-              <a href="business.html">Business</a>
-              <a href="Tarif.html">Pricing</a>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Aliviatech Logo">
+        </a>
         
-             
-        </div>
-        <div class="footer-heading footer-2">
-              <h2>Contact-Us </h2> 
-              <p> 613-700-5827</p>
-              <p ><a target="_blank" href=" mailto:info@aliviatech.ca"> Courriel: info@aliviatech.ca</a>  </p>
-              
-              
-        </div>
-        <div class="footer-heading footer-3">
-              <h2>Social media </h2> 
-                <a target="_blank" href=" https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
-              <a target="_blank" href=" https://www.instagram.com/aliviatech__/">Instagram </a>
-            
-        </div>
-        <div class="footer-email-form">
-            <h2> Learn more about us </h2>
-            <input type="email" placeholder="enter your email address  " id="footer-email">
-            <input type="submit" value="sign up " id="footer-email-btn">
+        <nav>
+            <ul class="nav-main">
+                <li class="hideOnMobile"><a href="index.html">Accueil</a></li>
+                <li class="hideOnMobile"><a href="A propos.html">A Propos</a></li>
+                <li class="hideOnMobile"><a href="particuliers.html">Particuliers</a></li>
+                <li class="hideOnMobile"><a href="pme.html">Business</a></li>
+                <li class="hideOnMobile"><a href="pricing.html">Tarif</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="hideOnMobile"><span class="lang-switch"><a href="business.html">EN</a></span></li>
+                
+                <li class="menu-button" onclick="showSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#E8F3FF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sidebar">
+                <li class="sidebar-close" onclick="hideSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8F3FF">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="A propos.html">A Propos</a></li>
+                <li><a href="particuliers.html">Particuliers</a></li>
+                <li><a href="pme.html">Business</a></li>
+                <li><a href="pricing.html">Tarif</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><span class="lang-switch"><a href="business.html">EN</a></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section">
+        <h2>Services PME</h2>
+
+        <div class="service-block">
+            <img src="pme1.jpg" alt="Services PME">
+
+            <div class="text">
+                <ul>
+                    <li>Tous les services particuliers</li>
+                    <li>Support informatique continu</li>
+                    <li>Configuration Wi‑Fi / Routeurs</li>
+                    <li>Dépannage de connexion</li>
+                    <li>Installation réseau</li>
+                    <li>Microsoft 365 & Google Workspace</li>
+                    <li>Sauvegarde & récupération</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>À propos</h2>
+                    <a href="index.html">Accueil</a>
+                    <a href="A propos.html">À Propos</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="pme.html">Business</a>
+                    <a href="pricing.html">Tarif</a>
+                </div>
+                
+                <div class="footer-heading footer-2">
+                    <h2>Contactez-nous</h2>
+                    <p>613-700-5827</p>
+                    <p><a target="_blank" href="mailto:info@aliviatech.ca">Courriel: info@aliviatech.ca</a></p>
+                </div>
+                
+                <div class="footer-heading footer-3">
+                    <h2>Suivez-nous</h2>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/aliviatech__/">Instagram</a>
+                </div>
+                
+                <div class="footer-email-form">
+                    <h2>En savoir plus sur nous</h2>
+                    <form>
+                        <input type="email" placeholder="Votre adresse courriel" id="footer-email">
+                        <input type="submit" value="S'inscrire" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
