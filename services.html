@@ -1,78 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Services PME - Aliviatech</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services PME - Aliviatech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <img src="logo.png">
-    <nav>
-       <a href="index.html">Accueil</a>
-       <a href="A propos.html"> A Propos</a>
-        <a href="particuliers.html">Particuliers</a>
-        <a href="pme.html">Business</a>
-        <a href="pricing.html">Tarif</a>
-        <a href="contact.html">Contact</a>
-        <span class="lang-switch"><a href="business.html">EN</a></span>
-    </nav>
-</header>
-
-<div class="section">
-    <h2>Services PME</h2>
-
-    <div class="service-block">
-        <img src="pme1.jpg">
-
-        <div class="text">
-            <ul>
-                <li>Tous les services particuliers</li>
-                <li>Support informatique continu</li>
-                <li>Configuration Wi‑Fi / Routeurs</li>
-                <li>Dépannage de connexion</li>
-                <li>Installation réseau</li>
-                <li>Microsoft 365 & Google Workspace</li>
-                <li>Sauvegarde & récupération</li>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Aliviatech Logo">
+        </a>
+        
+        <nav>
+            <ul class="nav-main">
+                <li class="hideOnMobile"><a href="index.html">Accueil</a></li>
+                <li class="hideOnMobile"><a href="A propos.html">A Propos</a></li>
+                <li class="hideOnMobile"><a href="particuliers.html">Particuliers</a></li>
+                <li class="hideOnMobile"><a href="pme.html">Business</a></li>
+                <li class="hideOnMobile"><a href="pricing.html">Tarif</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="hideOnMobile"><span class="lang-switch"><a href="business.html">EN</a></span></li>
+                
+                <li class="menu-button" onclick="showSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#E8F3FF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-        </div>
-    </div>
-</div>
-<div class="footer-container">
-    <div class="footer">
-        <div class="footer-heading footer-1">
-              <h2>A propos  </h2> 
-               <a href="index.html">Accueil</a>
-               <a href="A propos.html"> A Propos</a>
-               <a href="particuliers.html">Particuliers</a>
-               <a href="pme.html">PME</a>
-               <a href="pricing.html">Tarif</a>
-               
-             
-        </div>
-        <div class="footer-heading footer-2">
-              <h2>Contactez nous </h2> 
-              <p> 613-700-5827</p>
-              <p ><a target="_blank" href=" mailto:info@aliviatech.ca"> Courriel: info@aliviatech.ca</a>  </p>
-              
-        </div>
-        <div class="footer-heading footer-3">
-              <h2>Suivez-nous</h2> 
-               <a target="_blank" href=" https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
-              <a target="_blank" href=" https://www.instagram.com/aliviatech__/">Instagram </a>
-            
-            
-        </div>
-        <div class="footer-email-form">
-            <h2> En savoir plus sur nous</h2>
-            <input type="email" placeholder="enter your email address  " id="footer-email">
-            <input type="submit" value="sign up " id="footer-email-btn">
+
+            <ul class="sidebar">
+                <li class="sidebar-close" onclick="hideSidebar(event)">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8F3FF">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="A propos.html">A Propos</a></li>
+                <li><a href="particuliers.html">Particuliers</a></li>
+                <li><a href="pme.html">Business</a></li>
+                <li><a href="pricing.html">Tarif</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><span class="lang-switch"><a href="business.html">EN</a></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section">
+        <h2>Services PME</h2>
+
+        <div class="service-block">
+            <img src="pme1.jpg" alt="Services PME">
+
+            <div class="text">
+                <ul>
+                    <li>Tous les services particuliers</li>
+                    <li>Support informatique continu</li>
+                    <li>Configuration Wi‑Fi / Routeurs</li>
+                    <li>Dépannage de connexion</li>
+                    <li>Installation réseau</li>
+                    <li>Microsoft 365 & Google Workspace</li>
+                    <li>Sauvegarde & récupération</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>À propos</h2>
+                    <a href="index.html">Accueil</a>
+                    <a href="A propos.html">À Propos</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="pme.html">Business</a>
+                    <a href="pricing.html">Tarif</a>
+                </div>
+                
+                <div class="footer-heading footer-2">
+                    <h2>Contactez-nous</h2>
+                    <p>613-700-5827</p>
+                    <p><a target="_blank" href="mailto:info@aliviatech.ca">Courriel: info@aliviatech.ca</a></p>
+                </div>
+                
+                <div class="footer-heading footer-3">
+                    <h2>Suivez-nous</h2>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61582427879384">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/aliviatech__/">Instagram</a>
+                </div>
+                
+                <div class="footer-email-form">
+                    <h2>En savoir plus sur nous</h2>
+                    <form>
+                        <input type="email" placeholder="Votre adresse courriel" id="footer-email">
+                        <input type="submit" value="S'inscrire" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar(event) {
+            if (event) event.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
