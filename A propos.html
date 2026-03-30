@@ -71,6 +71,41 @@
         </div>
     </div>
 
+    <!-- Section Mission / Expertise / Pourquoi nous -->
+    <div class="section">
+        <div class="service-block pricing-grid">
+            <div class="pricing-column">
+                <h3>Notre Mission</h3>
+                <div class="pricing-content">
+                    <p>
+                        Aliviatech offre des services informatiques rapides et fiables pour les particuliers et petites entreprises de Gatineau. Nous intervenons pour tous vos besoins technologiques.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pricing-column">
+                <h3>Expertise</h3>
+                <div class="pricing-content">
+                    <ul class="pricing-list">
+                        <li>Dépannage complet PC/Mac, optimisation de performance et support à distance ou à domicile.</li>
+                        <li>Installation de réseaux performants, configuration de routeurs et domotique (caméras/objets connectés) </li>
+                        <li>Suppression de virus, récupération de données perdues et mise en place de sauvegardes sécurisées.</li>
+                        <li>Gestion Microsoft 365, installation de systèmes de caisse (POS) et maintenance informatique continue.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pricing-column">
+                <h3>Pourquoi nous?</h3>
+                <div class="pricing-content">
+                    <p>
+                        Approche humaine, prix transparents et rapidité d'intervention. Aliviatech est là pour vous accompagner dans votre environnement technologique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -98,28 +133,20 @@
                 
                 <div class="footer-email-form">
                     <h2>En savoir plus sur nous</h2>
-                    <form>
-                        <input type="email" placeholder="Entrez votre courriel" id="footer-email">
+                    <form id="signup-form">
+                        <input type="email" placeholder="Entrez votre courriel" id="footer-email" name="email" required>
                         <input type="submit" value="S'inscrire" id="footer-email-btn">
+                        <p id="form-message"></p>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        function showSidebar(event) {
-            if (event) event.preventDefault();
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
+    <!-- JavaScript externe -->
+   
 
-        function hideSidebar(event) {
-            if (event) event.preventDefault();
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

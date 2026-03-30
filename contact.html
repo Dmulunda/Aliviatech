@@ -89,28 +89,18 @@
                 
                 <div class="footer-email-form">
                     <h2>En savoir plus sur nous</h2>
-                    <form>
-                        <input type="email" placeholder="Entrez votre adresse courriel" id="footer-email">
+                   <form id="signup-form">
+                        <input type="email" placeholder="Entrez votre courriel" id="footer-email" name="email" required>
                         <input type="submit" value="S'inscrire" id="footer-email-btn">
+                        <p id="form-message"></p>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        function showSidebar(event) {
-            if (event) event.preventDefault();
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'flex';
-        }
-
-        function hideSidebar(event) {
-            if (event) event.preventDefault();
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = 'none';
-        }
-    </script>
+   <!-- JavaScript externe (à la fin du body) -->
+    <script src="script.js"></script>
 
 </body>
 </html>
