@@ -9,7 +9,12 @@
 body {
     min-height: 100vh;
     background: #0B2D4A;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
+    transition: background-image 1s ease-in-out;
 }
 
 /* ===== HEADER ===== */
@@ -188,6 +193,79 @@ nav {
     font-size: 18px;
 }
 
+.service-block .text ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.service-block .text ul li {
+    padding: 8px 0;
+    font-size: 17px;
+}
+
+/* ===== PRICING GRID (3 colonnes) ===== */
+.service-block.pricing-grid {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.pricing-column {
+    flex: 1;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-column h3 {
+    color: #40DFFF;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(64, 223, 255, 0.3);
+    text-align: center;
+}
+
+.pricing-content {
+    flex: 1;
+}
+
+.pricing-content p {
+    color: #E8F3FF;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #E8F3FF;
+    font-size: 16px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.pricing-list li:last-child {
+    border-bottom: none;
+}
+
+.pricing-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #40DFFF;
+    font-weight: bold;
+}
+
 /* ===== CONTACT ===== */
 .contact-center {
     text-align: center;
@@ -259,7 +337,7 @@ nav {
 .footer-container {
     background-color: #212329;
     padding: 4rem 0;
-    margin-top: 350px;
+    margin-top: 100px;
 }
 
 .footer {
@@ -339,6 +417,12 @@ nav {
     transition: all 0.3s ease-out;
 }
 
+#form-message {
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
 /* ===== CLASSES RESPONSIVE ===== */
 .hideOnMobile {
     display: flex;
@@ -378,6 +462,16 @@ nav {
     .service-block img,
     .service-block .text {
         width: 100%;
+    }
+    
+    .service-block.pricing-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .pricing-column {
+        min-width: 45%;
+        flex: 1 1 45%;
     }
     
     .footer {
@@ -439,9 +533,20 @@ nav {
         width: 100%;
     }
     
+    /* Pricing grid en colonne sur mobile */
+    .service-block.pricing-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .pricing-column {
+        min-width: 100%;
+    }
+    
     /* Carousel plus petit */
     .container {
         width: 280px;
+        height: 200px;
         margin: 50px auto;
     }
     
@@ -461,7 +566,7 @@ nav {
     .carousel__face:nth-child(9) { transform: rotateY(320deg) translateZ(280px); }
     
     .footer-container {
-        margin-top: 200px;
+        margin-top: 50px;
     }
     
     .footer {
@@ -489,5 +594,14 @@ nav {
     
     .hero h1 {
         font-size: 22px;
+    }
+    
+    .pricing-column h3 {
+        font-size: 18px;
+    }
+    
+    .pricing-content p,
+    .pricing-list li {
+        font-size: 14px;
     }
 }
