@@ -318,19 +318,59 @@ nav {
     font-size: 2rem;
 }
 
-.carousel__face:nth-child(1) { background-image: url("logo.png"); transform: rotateY(0deg) translateZ(430px); }
-.carousel__face:nth-child(2) { background-image: url("Home.png"); transform: rotateY(40deg) translateZ(430px); }
-.carousel__face:nth-child(3) { background-image: url("Pricing.png"); transform: rotateY(80deg) translateZ(430px); }
-.carousel__face:nth-child(4) { background-image: url("PME.png"); transform: rotateY(120deg) translateZ(430px); }
-.carousel__face:nth-child(5) { background-image: url("PME1.png"); transform: rotateY(160deg) translateZ(430px); }
-.carousel__face:nth-child(6) { background-image: url("Home-IT.png"); transform: rotateY(200deg) translateZ(430px); }
-.carousel__face:nth-child(7) { background-image: url("net.png"); transform: rotateY(240deg) translateZ(430px); }
-.carousel__face:nth-child(8) { background-image: url("matrix.png"); transform: rotateY(280deg) translateZ(430px); }
-.carousel__face:nth-child(9) { background-image: url("colabo.png"); transform: rotateY(320deg) translateZ(430px); }
+.carousel__face:nth-child(1) {
+    background-image: url("logo.png");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+    background-image: url("Home.png");
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+    background-image: url("Pricing.png");
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+    background-image: url("PME.png");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+    background-image: url("PME1.png");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+    background-image: url("Home-IT.png");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+    background-image: url("net.png");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+    background-image: url("matrix.png");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+    background-image: url("colabo.png");
+    transform: rotateY(320deg) translateZ(430px);
+}
 
 @keyframes rotate360 {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(-360deg); }
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
 }
 
 /* ===== FOOTER ===== */
@@ -438,10 +478,11 @@ nav {
 
 /* ===== FLOATING ACTION BUTTON (MOBILE) ===== */
 .mobile-fab-container {
-    display: none; /* Cache by default */
+    display: none;
+    /* Cache by default */
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     z-index: 1000;
 }
 
@@ -466,7 +507,7 @@ nav {
 .fab-menu {
     position: absolute;
     bottom: 80px;
-    right: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -474,7 +515,7 @@ nav {
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.3s ease;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .fab-menu.active {
@@ -509,47 +550,48 @@ nav {
 
 /* ===== TABLETTE (601px - 1024px) ===== */
 @media (max-width: 1024px) and (min-width: 601px) {
+
     .hideOnTablet,
     .hideOnMobileAndTablet {
         display: none !important;
     }
-    
+
     .menu-button {
         display: flex;
     }
-    
+
     header {
         padding: 15px 30px;
     }
-    
+
     .hero h1 {
         font-size: 36px;
     }
-    
+
     .service-block {
         flex-direction: column;
     }
-    
+
     .service-block img,
     .service-block .text {
         width: 100%;
     }
-    
+
     .service-block.pricing-grid {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     .pricing-column {
         min-width: 45%;
         flex: 1 1 45%;
     }
-    
+
     .footer {
         justify-content: center;
         text-align: center;
     }
-    
+
     .footer-heading {
         align-items: center;
     }
@@ -557,105 +599,132 @@ nav {
 
 /* ===== MOBILE (600px et moins) ===== */
 @media (max-width: 600px) {
+
     .hideOnMobile,
     .hideOnMobileAndTablet {
         display: none !important;
     }
-    
+
     .menu-button {
         display: flex;
     }
-    
+
     header {
         padding: 10px 20px;
     }
-    
+
     header img {
         height: 50px;
     }
-    
+
     .hero {
         padding: 80px 20px;
     }
-    
+
     .hero h1 {
         font-size: 28px;
     }
-    
+
     .hero p {
         font-size: 16px;
     }
-    
+
     .section {
         padding: 40px 20px;
     }
-    
+
     .section h2 {
         font-size: 24px;
     }
-    
+
     .service-block {
         flex-direction: column;
         padding: 15px;
     }
-    
+
     .service-block img,
     .service-block .text {
         width: 100%;
     }
-    
+
     /* Pricing grid en colonne sur mobile */
     .service-block.pricing-grid {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .pricing-column {
         min-width: 100%;
     }
-    
+
     /* Carousel plus petit */
     .container {
         width: 280px;
         height: 200px;
         margin: 50px auto;
     }
-    
+
     .carousel__face {
         width: 220px;
         height: 137px;
     }
-    
-    .carousel__face:nth-child(1) { transform: rotateY(0deg) translateZ(280px); }
-    .carousel__face:nth-child(2) { transform: rotateY(40deg) translateZ(280px); }
-    .carousel__face:nth-child(3) { transform: rotateY(80deg) translateZ(280px); }
-    .carousel__face:nth-child(4) { transform: rotateY(120deg) translateZ(280px); }
-    .carousel__face:nth-child(5) { transform: rotateY(160deg) translateZ(280px); }
-    .carousel__face:nth-child(6) { transform: rotateY(200deg) translateZ(280px); }
-    .carousel__face:nth-child(7) { transform: rotateY(240deg) translateZ(280px); }
-    .carousel__face:nth-child(8) { transform: rotateY(280deg) translateZ(280px); }
-    .carousel__face:nth-child(9) { transform: rotateY(320deg) translateZ(280px); }
-    
+
+    .carousel__face:nth-child(1) {
+        transform: rotateY(0deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(2) {
+        transform: rotateY(40deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(3) {
+        transform: rotateY(80deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(4) {
+        transform: rotateY(120deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(5) {
+        transform: rotateY(160deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(6) {
+        transform: rotateY(200deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(7) {
+        transform: rotateY(240deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(8) {
+        transform: rotateY(280deg) translateZ(280px);
+    }
+
+    .carousel__face:nth-child(9) {
+        transform: rotateY(320deg) translateZ(280px);
+    }
+
     .footer-container {
         margin-top: 50px;
     }
-    
+
     .footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
+
     .footer-heading {
         align-items: center;
         margin-bottom: 2rem;
     }
-    
+
     #footer-email {
         width: 100%;
         max-width: 280px;
     }
-    
+
     /* Show FAB on mobile */
     .mobile-fab-container {
         display: block;
@@ -667,15 +736,15 @@ nav {
     .sidebar {
         width: 100%;
     }
-    
+
     .hero h1 {
         font-size: 22px;
     }
-    
+
     .pricing-column h3 {
         font-size: 18px;
     }
-    
+
     .pricing-content p,
     .pricing-list li {
         font-size: 14px;
