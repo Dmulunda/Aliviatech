@@ -132,5 +132,3 @@ document.addEventListener('click', function(event) {
         }
     }
 });
-
-// to access analytics of by website 
