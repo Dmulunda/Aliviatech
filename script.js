@@ -134,12 +134,3 @@ document.addEventListener('click', function(event) {
 });
 
 // to access analytics of by website 
-
-
- src="https://www.googletagmanager.com/gtag/js?id=G-GJD7D0XFX9">
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GJD7D0XFX9');
