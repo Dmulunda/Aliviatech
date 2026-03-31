@@ -132,3 +132,14 @@ document.addEventListener('click', function(event) {
         }
     }
 });
+
+// Google Analytics - dynamically loaded
+const gaScript = document.createElement('script');
+gaScript.async = true;
+gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-GJD7D0XFX9";
+document.head.appendChild(gaScript);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-GJD7D0XFX9');
