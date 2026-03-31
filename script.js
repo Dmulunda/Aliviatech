@@ -111,3 +111,35 @@ document.addEventListener('DOMContentLoaded', function() {
     initEmailForm();
     console.log('Aliviatech scripts (Formspree) loaded successfully!');
 });
+
+
+/* ----- MOBILE FAB MENU ----- */
+function toggleFabMenu() {
+    const fabMenu = document.getElementById('fabMenu');
+    if (fabMenu) {
+        fabMenu.classList.toggle('active');
+    }
+}
+
+// Close fab if click outside
+document.addEventListener('click', function(event) {
+    const fabMenu = document.getElementById('fabMenu');
+    const fabContainer = document.querySelector('.mobile-fab-container');
+    
+    if (fabMenu && fabMenu.classList.contains('active')) {
+        if (fabContainer && !fabContainer.contains(event.target)) {
+            fabMenu.classList.remove('active');
+        }
+    }
+});
+
+// to access analytics of by website 
+
+
+ src="https://www.googletagmanager.com/gtag/js?id=G-GJD7D0XFX9">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GJD7D0XFX9');
